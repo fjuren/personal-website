@@ -8,24 +8,37 @@
       content="Fabian Juren's personal portfolio. See his work and contact him."
     />
     <meta name="author" content="Fabian Juren" />
-    <title>Fabian Juren Portfolio</title>
+    <title>Fabian Juren</title>
+
     <link rel="stylesheet" href="styles.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    /> -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
     />
+
+    <!-- may need to change base per domain -->
+    <!-- <base href="https://fabianjuren.com" /> -->
+
+    <!-- TODO social icons placeholder -->
+
+    <!-- TODO JS script handling placeholder -->
+    <!-- <script defer src=""></script> -->
   </head>
   <body>
     <!-- Navigation -->
+    <a href="#hero" class="primary-btn visible-hidden">Jump to main content</a>
+
     <header id="top-nav">
       <div id="logo">
         <span><a href="#">FJ</a></span>
       </div>
-      <nav role="navigation">
+      <nav role="navigation" aria-label="Top navigation bar">
         <ul id="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#resume">Resume</a></li>
@@ -40,11 +53,12 @@
       <section id="hero">
         <h3>Hi there, I'm</h3>
         <h1>Fabian Juren</h1>
-        <h3>
-          Great software isn't just about code. It's about people. I bridge the
-          gap between development and user experience—building products that
-          work for both the devs who create them and the users who rely on them.
-        </h3>
+        <h2>
+          Great software isn't just about code. It's about <em>people</em>. I
+          bridge the gap between development and <em>user experience</em> —
+          building products that work for both the devs who create them and the
+          users who rely on them.
+        </h2>
         <div id="cta-buttons">
           <a href="#projects" class="btn primary-btn"> Check out my work </a>
           or
@@ -53,19 +67,36 @@
       </section>
 
       <!-- Social -->
-      <section id="social-links">
-        <a
-          href="https://linkedin.com/in/fabianjuren"
-          target="_blank"
-          id="linkedin"
-        >
-          <i class="fab fa-linkedin"></i>
-        </a>
+      <section id="social">
+        <h2>Find me online</h2>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/fabianjuren/"
+            target="_blank"
+            title="LinkedIn"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/fjuren"
+            target="_blank"
+            target="GitHub"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
       </section>
 
       <!-- About -->
       <section id="about">
-        <h2>About</h2>
+        <h2>About me</h2>
+        <img
+          id="profile-pic"
+          src="\Fabian Hawaii.jpg"
+          alt="Picture of Fabian with a mountainous background"
+        />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minus
           facilis dicta. Pariatur, iusto. Consequuntur repellat, sint a
@@ -121,9 +152,16 @@
           excepturi similique ad modi dolor ipsum repellendus est, animi vel
           ullam minus expedita suscipit nisi.
         </p>
+        <a
+          href="mailto:fjuren@gmail.com"
+          rel="noopener noreferrer"
+          target="_blank"
+          class="btn secondary-btn"
+          >Reach out!</a
+        >
       </section>
     </main>
 
-    <footer id="footer">Made with love by Fabian <3</footer>
+    <footer id="footer">Built by Fabian Juren</footer>
   </body>
 </html>
