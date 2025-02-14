@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
     <meta
       name="description"
-      content="Fabian Juren's personal portfolio. See his work and contact him."
+      content="Fabian Juren's personal portfolio. See his portfolio and contact him."
     />
     <meta name="author" content="Fabian Juren" />
     <title>Fabian Juren</title>
@@ -32,12 +33,12 @@
     <!-- Navigation -->
     <a href="#hero" class="primary-btn visible-hidden">Jump to main content</a>
 
-    <header id="top-nav">
-      <div id="logo">
-        <span><a href="#">FJ</a></span>
-      </div>
+    <header>
       <nav role="navigation" aria-label="Top navigation bar">
-        <ul id="nav-links">
+        <a href="#" id="logo">
+          <div>FJ</div>
+        </a>
+        <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#resume">Resume</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -49,14 +50,18 @@
     <main>
       <!-- Hero -->
       <section id="hero">
-        <h3>Hi there, I'm</h3>
+        <p>Hi there, I'm</p>
         <h1>Fabian Juren</h1>
-        <h2>
-          Great software isn't just about code. It's about <em>people</em>. I
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          id sunt incidunt explicabo magni accusamus saepe. Veniam delectus
+          repellendus autem temporibus odio exercitationem voluptatibus odit
+          numquam. Esse ducimus molestias excepturi!
+          <!-- Great software isn't just about code. It's about <em>people</em>. I
           bridge the gap between development and <em>user experience</em> —
           building products that work for both the devs who create them and the
-          users who rely on them.
-        </h2>
+          users who rely on them. -->
+        </p>
         <div id="cta-buttons">
           <a href="#projects" class="btn primary-btn"> Check out my work </a>
           or
@@ -69,21 +74,19 @@
         <h2>About me</h2>
         <img
           id="profile-pic"
-          src="\Fabian Hawaii.jpg"
-          alt="Picture of Fabian with a mountainous background"
+          src="\Fabian's profile picture.webp"
+          alt="Picture of Fabian with a pretty mountainous background"
         />
         <!-- Social -->
         <div class="social-links">
           <a
-            href="https://www.linkedin.com/in/fabianjuren/"
+            href="https://www.linkedin.com/in/"
             target="_blank"
-            title="LinkedIn"
-            aria-label="LinkedIn"
+            aria-label="LinkedIn link"
           >
             <!-- linkedin icon by Free Icons (https://free-icons.github.io/free-icons/) -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              height="1em"
               fill="currentColor"
               viewBox="0 0 512 512"
               class="social-icon"
@@ -97,12 +100,12 @@
             href="https://github.com/fjuren"
             target="_blank"
             target="GitHub"
-            aria-label="GitHub"
+            title="Fabian's GitHub"
+            aria-label="GitHub link"
           >
             <!-- github icon by Free Icons (https://free-icons.github.io/free-icons/) -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              height="1em"
               fill="currentColor"
               viewBox="0 0 512 512"
               class="social-icon"
