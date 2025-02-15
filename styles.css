@@ -1,5 +1,11 @@
-/* General */
+/* reset browser defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* General */
 html {
   scroll-behavior: smooth;
 }
@@ -12,6 +18,7 @@ body {
 }
 
 main {
+  padding-top: 2rem;
   margin: 5rem;
 }
 
@@ -26,20 +33,21 @@ a:hover {
 }
 
 img {
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* top nav */
 
 header {
-  padding: 10px;
   top: 0;
-  position: sticky;
+  position: fixed;
   background-color: #2e3440;
   opacity: 1;
   z-index: 100;
+  width: 100%;
 }
 #logo {
   display: flex;
@@ -75,6 +83,12 @@ li {
 li:hover {
   background-color: #d8dee920;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  ul {
+    display: none;
+  }
 }
 
 /* Accessible anchor jump to main */
@@ -125,12 +139,49 @@ li:hover {
   color: #88c0d0;
 }
 
+/* hero */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+.intro-1 {
+  font-size: 2vw;
+  font-weight: 100;
+}
+.intro-2 {
+  font-size: 6vw;
+}
+.intro-3 {
+  font-size: 2vw;
+  opacity: 50%;
+}
+.intro-4 {
+  font-size: 2vw;
+  padding: 1rem 0 1rem 0;
+}
+.social-links {
+  display: flex;
+  gap: 0.5rem;
+}
+.cta-buttons {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 3rem 0 3rem 0;
+}
 /* social icons */
 .social-icon {
   width: 1.5rem;
   height: 1.5rem;
 }
-
 .social-icon:hover {
-  background-color: #d8dee920;
+  color: #81a1c1;
+  transition: color 0.6s ease;
+}
+
+/* About */
+section {
+  display: flex;
 }
