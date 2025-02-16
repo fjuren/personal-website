@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: #2e3440;
+  background-color: #20252e;
   color: #d8dee9;
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -201,6 +201,9 @@ li:hover {
 .content {
   padding: 1rem 0 1rem 0;
 }
+.content-mid {
+  display: flex;
+}
 .content-inner {
   display: flex;
   flex-direction: column;
@@ -214,6 +217,7 @@ li:hover {
 .technical-skills {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-width: fit-content;
 }
 .technical-skills > li {
   list-style-type: circle;
