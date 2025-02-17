@@ -38,9 +38,9 @@
         <a href="#" id="logo">
           <div>FJ</div>
         </a>
-        <ul>
+        <ul id="nav-ul">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#featured-projects">Featured Projects</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -95,11 +95,28 @@
           </a>
         </div>
         <div class="cta-buttons">
-          <a href="#Education" class="btn primary-btn"> Check out my work </a>
+          <a
+            href="#featured-projects"
+            title="Featured projects"
+            aria-label="Go to featured projects section"
+            class="btn primary-btn"
+          >
+            Check out my work
+          </a>
           or
-          <a href="#contact" class="btn secondary-btn">Say hello</a>
+          <a
+            href="#contact"
+            title="Contact"
+            aria-label="Go to contact section"
+            class="btn secondary-btn"
+            >Say hello</a
+          >
         </div>
       </section>
+
+      <div style="display: flex; justify-content: center">
+        <hr />
+      </div>
 
       <!-- About -->
       <section id="about" class="content">
@@ -107,39 +124,56 @@
         <div class="content-mid">
           <div class="content-inner">
             <p>
-              <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur id sunt incidunt explicabo magni accusamus saepe.
-              Veniam delectus repellendus autem temporibus odio exercitationem
-              voluptatibus odit numquam. Esse ducimus molestias excepturi! -->
-              Great software isn't just about code. It's about <em>people</em>.
-              I bridge the gap between development and
-              <em>user experience</em> — building products that work for both
-              the devs who create them and the users who rely on them.
+              Great software isn't just about code; it's about
+              <span class="keyword">people</span>. I bridge the gap between
+              development and user experience, ensuring products are intuitive
+              for end users and its developers.
             </p>
+
+            <p>
+              My journey into software development began with an enjoyment for
+              problem-solving. While working as a data analyst, I enjoyed the
+              technical aspects - data wrangling, Python scripting, and
+              automation - but I soon realized my true passion lay in building
+              software. I self-taught coding through open-source resources like
+              <a
+                href="http://theodinproject.com/"
+                target="_blank"
+                class="keyword"
+                >The Odin Project</a
+              >, before formally strengthening my skills by completing a
+              software development program at the University of British Columbia
+              (UBC).
+            </p>
+
+            <p>
+              My background in product management has given me a strong
+              foundation in Agile methodologies, cross-functional collaboration,
+              and gathering user feedback to drive continuous, iterative product
+              improvements. I've worked closely with developers, business
+              leaders, and end users to ensure that technical solutions align
+              with real-world needs.
+            </p>
+
+            <p>
+              Today, I focus on web development, app development, and software
+              engineering, applying both my technical and product expertise to
+              create scalable, user-centric solutions.
+            </p>
+
             <div class="sub-content-inner">
+              <h3>Technical skills:</h3>
               <ul class="technical-skills">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Javascript</li>
                 <li>Typescript</li>
-                <li>Node</li>
+                <li>Node JS</li>
                 <li>React</li>
                 <li>Remix</li>
+                <li>Python</li>
               </ul>
             </div>
-            <!-- <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minus
-              facilis dicta. Pariatur, iusto. Consequuntur repellat, sint a
-              aspernatur qui nulla eligendi assumenda obcaecati recusandae
-              adipisci asperiores natus corporis debitis. Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Assumenda odio modi, aperiam quia
-              eveniet, quibusdam pariatur repellat dolorum perferendis fuga quod
-              dolores laborum placeat qui blanditiis totam officiis, reiciendis
-              explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae possimus provident, voluptates eum perferendis harum
-              obcaecati ab vel recusandae aspernatur blanditiis eaque suscipit,
-              voluptatem beatae voluptas deserunt architecto repellendus. Vitae.
-            </p> -->
           </div>
           <img
             id="profile-pic"
@@ -149,53 +183,107 @@
         </div>
       </section>
 
-      <!-- Experience -->
-      <section id="experience" class="content">
-        <h2>Experience</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-          incidunt sit assumenda quas, facere itaque voluptate, minima at
-          corporis aliquid sequi quia deleniti quibusdam inventore, aliquam
-          unde! Repellat, iure alias? Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit. Beatae ex debitis quas quisquam laboriosam quidem
-          excepturi similique ad modi dolor ipsum repellendus est, animi vel
-          ullam minus expedita suscipit nisi.
-        </p>
+      <div style="display: flex; justify-content: center">
+        <hr />
+      </div>
+
+      <!-- Featured projects -->
+      <section id="featured-projects" class="content list-content">
+        <h2>Featured Projects</h2>
+        <div class="parent-stacked-list">
+          <div class="child-stacked-list">
+            <h3>Grocerfy - grocery list making app</h3>
+            <h4>Tech Stack: [React, Material UI, Firebase .......]</h4>
+            <div>
+              <ul class="features">
+                <li>Built a full-stack web application where...etc</li>
+                <li>
+                  Integrated authentication, database management and an
+                  intuitive UI/UX design
+                </li>
+                <li>Leveraged pre-existing UI library.... etc...</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="child-stacked-list">
+            <h3>Grocerfy - grocery list making app</h3>
+            <h4>Tech Stack: [React, Material UI, Firebase .......]</h4>
+            <div>
+              <ul class="features">
+                <li>Built a full-stack web application where...etc</li>
+                <li>
+                  Integrated authentication, database management and an
+                  intuitive UI/UX design
+                </li>
+                <li>Leveraged pre-existing UI library.... etc...</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="child-stacked-list">
+            <h3>Grocerfy - grocery list making app</h3>
+            <h4>Tech Stack: [React, Material UI, Firebase .......]</h4>
+            <div>
+              <ul class="features">
+                <li>Built a full-stack web application where...etc</li>
+                <li>
+                  Integrated authentication, database management and an
+                  intuitive UI/UX design
+                </li>
+                <li>Leveraged pre-existing UI library.... etc...</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <div style="display: flex; justify-content: center">
+        <hr />
+      </div>
 
       <!-- Education -->
       <section id="education" class="content">
         <h2>Education</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-          incidunt sit assumenda quas, facere itaque voluptate, minima at
-          corporis aliquid sequi quia deleniti quibusdam inventore, aliquam
-          unde! Repellat, iure alias? Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit. Beatae ex debitis quas quisquam laboriosam quidem
-          excepturi similique ad modi dolor ipsum repellendus est, animi vel
-          ullam minus expedita suscipit nisi.
-        </p>
+        <div class="parent-stacked-list">
+          <div>
+            <ul class="features">
+              <li>BSc - UBC</li>
+              <li>Software Development Certification - UBC</li>
+              <li>CSPO Scrum Alliance</li>
+            </ul>
+          </div>
+        </div>
       </section>
+
+      <div style="display: flex; justify-content: center">
+        <hr />
+      </div>
 
       <!-- Contact -->
       <section id="contact" class="content">
-        <h2>Contact</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-          incidunt sit assumenda quas, facere itaque voluptate, minima at
-          corporis aliquid sequi quia deleniti quibusdam inventore, aliquam
-          unde! Repellat, iure alias? Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit. Beatae ex debitis quas quisquam laboriosam quidem
-          excepturi similique ad modi dolor ipsum repellendus est, animi vel
-          ullam minus expedita suscipit nisi.
-        </p>
-        <a
-          href="mailto:fjuren@gmail.com"
-          rel="noopener noreferrer"
-          target="_blank"
-          class="btn secondary-btn"
-          >Reach out!</a
-        >
+        <h2>Next Steps</h2>
+        <div class="parent-stacked-list">
+          <div class="child-stacked-list">
+            <h3>Let's connect!</h3>
+            <p>
+              I'd love to chat about software development, product strategy, or
+              anything tech-related. Whether you have questions, collaboration
+              ideas, or job opportunities, feel free to reach out.
+            </p>
+          </div>
+          <div class="solo-btns">
+            <a
+              href="mailto:fjuren@gmail.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Contact Fabian"
+              aria-label="Contact Fabian"
+              class="btn primary-btn"
+              >Reach out!</a
+            >
+          </div>
+        </div>
       </section>
     </main>
 
