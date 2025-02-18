@@ -6,6 +6,7 @@
     color: #d8dee9;
     font-family: 'Inter', sans-serif;
     margin: 0;
+    line-height: 1.3;
   }
 
   /* reset browser defaults */
@@ -28,11 +29,22 @@
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.88rem;
     padding-bottom: 1rem;
   }
 
   h3 {
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #88c0d0;
+  }
+
+  p {
+    line-height: 1.7;
     font-size: 1rem;
   }
 
@@ -64,6 +76,7 @@
     list-style-type: circle;
     margin: 0 20px 0 20px;
     padding: 10px;
+    font-size: 1rem;
   }
 
   li:hover {
@@ -79,6 +92,7 @@
 
   .keyword {
     color: #88c0d0;
+    text-decoration: underline;
   }
 
   /* top nav */
@@ -154,7 +168,7 @@
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   }
@@ -187,18 +201,20 @@
     justify-content: center;
   }
   .intro-1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 100;
   }
   .intro-2 {
-    font-size: 3rem;
+    font-size: 2.2rem;
+    font-weight: bold;
   }
   .intro-3 {
-    font-size: 1.5rem;
-    opacity: 50%;
+    font-size: 1rem;
+    color: #88c0d0;
+    opacity: 75%;
   }
   .intro-4 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 1rem 0 1rem 0;
   }
   .social-links {
@@ -270,7 +286,7 @@
 
 @media (max-width: 640px) {
   body {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
   ul {
     display: flex;
@@ -319,7 +335,40 @@
   main {
     margin: 8rem 12rem 0 12rem;
   }
+  h2 {
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #88c0d0;
+  }
+  p {
+    font-size: 1.13rem;
+  }
 
+  /* hero */
+
+  .intro-1 {
+    font-size: 1.3rem;
+    font-weight: 100;
+  }
+  .intro-2 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .intro-3 {
+    font-size: 1.3rem;
+    opacity: 50%;
+  }
+  .intro-4 {
+    font-size: 1.3rem;
+    padding: 1rem 0 1rem 0;
+  }
   /* General content (About | Featured projects | Education 
    Contact */
   .content-mid {
@@ -334,6 +383,41 @@
   }
   main {
     margin: 8rem 30rem 0 30rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #88c0d0;
+  }
+  p {
+    font-size: 1.13rem;
+  }
+
+  /* hero */
+
+  .intro-1 {
+    font-size: 1.3rem;
+    font-weight: 100;
+  }
+  .intro-2 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .intro-3 {
+    font-size: 1.3rem;
+    opacity: 50%;
+  }
+  .intro-4 {
+    font-size: 1.3rem;
+    padding: 1rem 0 1rem 0;
   }
 
   /* General content (About | Featured projects | Education 
