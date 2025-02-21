@@ -30,289 +30,341 @@
     <!-- <script defer src=""></script> -->
   </head>
   <body>
-    <!-- Navigation -->
-    <a href="#hero" class="primary-btn visible-hidden">Jump to main content</a>
-
-    <header>
-      <nav role="navigation" aria-label="Top navigation bar">
-        <a href="#" id="logo">
-          <div>FJ</div>
-        </a>
-        <ul id="nav-ul">
-          <li><a href="#about">About</a></li>
-          <li><a href="#featured-projects">Featured Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li style="background-color: inherit">
-            <a
-              href="mailto:fjuren@gmail.com"
-              rel="noopener noreferrer"
-              target="_blank"
-              title="Contact Fabian"
-              aria-label="Contact Fabian"
-              class="btn secondary-btn"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <!-- Hero -->
-      <section class="hero">
-        <!-- Social -->
-        <h2 class="intro-1">Hey there! I'm</h2>
-        <h1 class="intro-2">Fabian Juren</h1>
-        <p class="intro-3">An aspiring software developer</p>
-        <p class="intro-4">I love building stuff for the web.</p>
-        <div class="social-links">
-          <a
-            href="https://www.linkedin.com/in/"
-            target="_blank"
-            title="Fabian's Linkedin"
-            aria-label="LinkedIn link"
-          >
-            <!-- linkedin icon by Free Icons (https://free-icons.github.io/free-icons/) -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 512 512"
-              class="social-icon"
-            >
-              <path
-                d="M 475.42857142857144 0 L 36.57142857142857 0 L 475.42857142857144 0 L 36.57142857142857 0 Q 20.571428571428573 0 10.285714285714286 10.285714285714286 Q 0 21.714285714285715 0 36.57142857142857 L 0 475.42857142857144 L 0 475.42857142857144 Q 0 490.2857142857143 10.285714285714286 501.7142857142857 Q 20.571428571428573 512 36.57142857142857 512 L 475.42857142857144 512 L 475.42857142857144 512 Q 491.42857142857144 512 501.7142857142857 501.7142857142857 Q 512 490.2857142857143 512 475.42857142857144 L 512 36.57142857142857 L 512 36.57142857142857 Q 512 21.714285714285715 501.7142857142857 10.285714285714286 Q 491.42857142857144 0 475.42857142857144 0 L 475.42857142857144 0 Z M 154.28571428571428 438.85714285714283 L 78.85714285714286 438.85714285714283 L 154.28571428571428 438.85714285714283 L 78.85714285714286 438.85714285714283 L 78.85714285714286 194.28571428571428 L 78.85714285714286 194.28571428571428 L 155.42857142857142 194.28571428571428 L 155.42857142857142 194.28571428571428 L 155.42857142857142 438.85714285714283 L 154.28571428571428 438.85714285714283 Z M 116.57142857142857 161.14285714285714 Q 98.28571428571429 161.14285714285714 85.71428571428571 148.57142857142858 L 85.71428571428571 148.57142857142858 L 85.71428571428571 148.57142857142858 Q 73.14285714285714 136 73.14285714285714 117.71428571428571 Q 73.14285714285714 98.28571428571429 85.71428571428571 85.71428571428571 Q 98.28571428571429 73.14285714285714 116.57142857142857 73.14285714285714 Q 136 73.14285714285714 147.42857142857142 85.71428571428571 Q 160 98.28571428571429 161.14285714285714 117.71428571428571 Q 160 136 147.42857142857142 148.57142857142858 Q 136 161.14285714285714 116.57142857142857 161.14285714285714 L 116.57142857142857 161.14285714285714 Z M 438.85714285714283 438.85714285714283 L 363.42857142857144 438.85714285714283 L 438.85714285714283 438.85714285714283 L 363.42857142857144 438.85714285714283 L 363.42857142857144 320 L 363.42857142857144 320 Q 364.57142857142856 297.14285714285717 357.7142857142857 276.57142857142856 Q 352 257.14285714285717 323.42857142857144 254.85714285714286 Q 294.85714285714283 256 285.7142857142857 274.2857142857143 Q 277.7142857142857 292.57142857142856 278.85714285714283 317.7142857142857 L 278.85714285714283 438.85714285714283 L 278.85714285714283 438.85714285714283 L 202.28571428571428 438.85714285714283 L 202.28571428571428 438.85714285714283 L 202.28571428571428 194.28571428571428 L 202.28571428571428 194.28571428571428 L 275.42857142857144 194.28571428571428 L 275.42857142857144 194.28571428571428 L 275.42857142857144 227.42857142857142 L 275.42857142857144 227.42857142857142 L 276.57142857142856 227.42857142857142 L 276.57142857142856 227.42857142857142 Q 283.42857142857144 212.57142857142858 301.7142857142857 201.14285714285714 Q 320 188.57142857142858 348.57142857142856 188.57142857142858 Q 404.57142857142856 189.71428571428572 422.85714285714283 221.71428571428572 Q 441.14285714285717 254.85714285714286 438.85714285714283 305.14285714285717 L 438.85714285714283 438.85714285714283 L 438.85714285714283 438.85714285714283 Z"
-              />
-            </svg>
+    <div class="container">
+      <!-- Navigation -->
+      <a href="#hero" class="primary-btn visible-hidden"
+        >Jump to main content</a
+      >
+      <header>
+        <nav role="navigation" aria-label="Top navigation bar">
+          <a href="#" id="logo">
+            <div>FJ</div>
           </a>
-          <a
-            href="https://github.com/fjuren"
-            target="_blank"
-            target="GitHub"
-            title="Fabian's GitHub"
-            aria-label="GitHub link"
-          >
-            <!-- github icon by Free Icons (https://free-icons.github.io/free-icons/) -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 512 512"
-              class="social-icon"
-            >
-              <path
-                d="M 171.3548387096774 407.741935483871 Q 170.32258064516128 411.8709677419355 166.19354838709677 411.8709677419355 Q 160 411.8709677419355 160 407.741935483871 Q 161.03225806451613 404.64516129032256 165.16129032258064 404.64516129032256 Q 170.32258064516128 404.64516129032256 171.3548387096774 407.741935483871 L 171.3548387096774 407.741935483871 Z M 139.3548387096774 403.61290322580646 Q 138.32258064516128 406.7096774193548 143.48387096774192 408.7741935483871 Q 148.6451612903226 409.80645161290323 149.67741935483872 406.7096774193548 Q 150.70967741935485 402.5806451612903 145.5483870967742 401.5483870967742 Q 140.38709677419354 400.51612903225805 139.3548387096774 403.61290322580646 L 139.3548387096774 403.61290322580646 Z M 184.7741935483871 401.5483870967742 Q 179.61290322580646 402.5806451612903 179.61290322580646 406.7096774193548 Q 180.6451612903226 409.80645161290323 185.80645161290323 409.80645161290323 Q 190.96774193548387 407.741935483871 190.96774193548387 404.64516129032256 Q 189.93548387096774 401.5483870967742 184.7741935483871 401.5483870967742 L 184.7741935483871 401.5483870967742 Z M 252.90322580645162 6.193548387096774 Q 142.4516129032258 8.258064516129032 72.25806451612904 78.45161290322581 L 72.25806451612904 78.45161290322581 L 72.25806451612904 78.45161290322581 Q 2.064516129032258 148.6451612903226 0 258.06451612903226 Q 1.032258064516129 345.80645161290323 48.516129032258064 411.8709677419355 Q 96 477.93548387096774 175.48387096774192 504.7741935483871 Q 194.06451612903226 505.80645161290323 193.03225806451613 492.38709677419354 Q 193.03225806451613 488.258064516129 193.03225806451613 476.9032258064516 Q 193.03225806451613 453.16129032258067 193.03225806451613 429.4193548387097 Q 190.96774193548387 429.4193548387097 173.41935483870967 431.48387096774195 Q 154.83870967741936 432.51612903225805 134.19354838709677 427.35483870967744 Q 113.54838709677419 421.16129032258067 105.29032258064517 398.4516129032258 Q 105.29032258064517 396.38709677419354 97.03225806451613 381.93548387096774 Q 88.7741935483871 368.51612903225805 76.38709677419355 360.258064516129 Q 74.3225806451613 359.2258064516129 68.12903225806451 352 Q 60.903225806451616 345.80645161290323 78.45161290322581 344.7741935483871 Q 79.48387096774194 343.741935483871 92.90322580645162 348.9032258064516 Q 106.3225806451613 353.03225806451616 117.6774193548387 371.61290322580646 Q 136.25806451612902 399.48387096774195 157.93548387096774 399.48387096774195 Q 180.6451612903226 399.48387096774195 193.03225806451613 393.2903225806452 Q 197.16129032258064 368.51612903225805 209.5483870967742 358.19354838709677 Q 164.1290322580645 356.1290322580645 130.06451612903226 335.48387096774195 Q 96 315.8709677419355 93.93548387096774 243.61290322580646 Q 93.93548387096774 222.96774193548387 100.12903225806451 209.5483870967742 Q 105.29032258064517 196.1290322580645 117.6774193548387 183.74193548387098 Q 115.61290322580645 177.5483870967742 113.54838709677419 158.96774193548387 Q 111.48387096774194 140.38709677419354 120.7741935483871 113.54838709677419 Q 139.3548387096774 110.45161290322581 164.1290322580645 124.90322580645162 Q 189.93548387096774 138.32258064516128 192 141.41935483870967 Q 192 141.41935483870967 192 141.41935483870967 Q 222.96774193548387 132.1290322580645 257.03225806451616 132.1290322580645 Q 290.06451612903226 132.1290322580645 322.06451612903226 141.41935483870967 Q 322.06451612903226 140.38709677419354 335.48387096774195 132.1290322580645 Q 347.8709677419355 123.87096774193549 364.38709677419354 117.6774193548387 Q 380.9032258064516 110.45161290322581 393.2903225806452 113.54838709677419 Q 402.5806451612903 140.38709677419354 400.51612903225805 158.96774193548387 Q 398.4516129032258 177.5483870967742 395.35483870967744 183.74193548387098 Q 407.741935483871 196.1290322580645 414.96774193548384 209.5483870967742 Q 422.19354838709677 222.96774193548387 422.19354838709677 243.61290322580646 Q 421.16129032258067 293.16129032258067 404.64516129032256 316.9032258064516 Q 387.0967741935484 339.61290322580646 360.258064516129 347.8709677419355 Q 333.4193548387097 356.1290322580645 303.48387096774195 358.19354838709677 Q 320 369.5483870967742 321.03225806451616 405.6774193548387 Q 321.03225806451616 443.8709677419355 321.03225806451616 473.80645161290323 Q 321.03225806451616 487.2258064516129 321.03225806451616 492.38709677419354 Q 320 505.80645161290323 338.5806451612903 504.7741935483871 Q 417.03225806451616 477.93548387096774 464.51612903225805 411.8709677419355 Q 510.96774193548384 345.80645161290323 512 258.06451612903226 Q 510.96774193548384 185.80645161290323 476.9032258064516 129.03225806451613 Q 441.80645161290323 72.25806451612904 384 39.225806451612904 Q 325.16129032258067 7.225806451612903 252.90322580645162 6.193548387096774 L 252.90322580645162 6.193548387096774 Z M 100.12903225806451 362.3225806451613 Q 98.06451612903226 364.38709677419354 101.16129032258064 367.48387096774195 Q 104.25806451612904 370.5806451612903 106.3225806451613 368.51612903225805 Q 108.38709677419355 366.4516129032258 105.29032258064517 363.35483870967744 Q 103.2258064516129 360.258064516129 100.12903225806451 362.3225806451613 L 100.12903225806451 362.3225806451613 Z M 88.7741935483871 354.06451612903226 Q 88.7741935483871 356.1290322580645 91.87096774193549 358.19354838709677 Q 94.96774193548387 359.2258064516129 96 357.16129032258067 Q 97.03225806451613 355.0967741935484 93.93548387096774 353.03225806451616 Q 90.83870967741936 352 88.7741935483871 354.06451612903226 L 88.7741935483871 354.06451612903226 Z M 122.83870967741936 390.19354838709677 Q 120.7741935483871 393.2903225806452 123.87096774193549 397.4193548387097 Q 128 400.51612903225805 131.09677419354838 398.4516129032258 Q 132.1290322580645 395.35483870967744 129.03225806451613 391.2258064516129 Q 124.90322580645162 388.1290322580645 122.83870967741936 390.19354838709677 L 122.83870967741936 390.19354838709677 Z M 110.45161290322581 375.741935483871 Q 108.38709677419355 377.80645161290323 110.45161290322581 381.93548387096774 Q 113.54838709677419 385.03225806451616 116.64516129032258 384 Q 118.70967741935483 381.93548387096774 116.64516129032258 377.80645161290323 Q 113.54838709677419 373.6774193548387 110.45161290322581 375.741935483871 L 110.45161290322581 375.741935483871 Z"
-              />
-            </svg>
-          </a>
-        </div>
-        <div class="cta-buttons">
-          <a
-            href="#featured-projects"
-            title="Featured projects"
-            aria-label="Go to featured projects section"
-            class="btn primary-btn"
-          >
-            Check out my work
-          </a>
-          or
-          <a
-            href="#contact"
-            title="Contact"
-            aria-label="Go to contact section"
-            class="btn secondary-btn"
-            >Say hello</a
-          >
-        </div>
-      </section>
-
-      <div style="display: flex; justify-content: center">
-        <hr />
-      </div>
-
-      <!-- About -->
-      <section id="about" class="content">
-        <h2>About</h2>
-        <div class="content-mid">
-          <div class="content-inner">
-            <p>
-              Great software isn't just about code; it's about people. I bridge
-              the gap between development and user experience, ensuring products
-              are intuitive and accessible for users and easy for developers to
-              maintain and scale.
-            </p>
-
-            <p>
-              My journey into software development began with an enjoyment for
-              problem-solving. While working as a data analyst, I especially
-              enjoyed the technical aspects - SQL data wrangling, Python
-              scripting - but I soon realized my true passion lay in building
-              software. I self-taught coding through open-source resources like
+          <ul id="nav-ul">
+            <li><a href="#about">About</a></li>
+            <li><a href="#featured-projects">Featured Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li style="background-color: inherit">
               <a
-                href="http://theodinproject.com/"
+                href="mailto:fjuren@gmail.com"
+                rel="noopener noreferrer"
                 target="_blank"
-                title="The Odin Project"
-                aria-label="The Odin Project"
-                class="keyword"
-                >The Odin Project</a
+                title="Contact Fabian"
+                aria-label="Contact Fabian"
+                class="btn secondary-btn"
+                >Contact</a
               >
-              and
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <!-- Hero -->
+        <section class="hero">
+          <div class="hero-content">
+            <h2 class="intro-1">Hey there! I'm</h2>
+            <h1 class="intro-2">Fabian Juren</h1>
+            <p class="intro-3">An aspiring software developer</p>
+            <p class="intro-4">I love building stuff for the web.</p>
+            <!-- Social -->
+            <div class="social-links">
               <a
-                href="https://www.epicweb.dev/"
+                href="https://www.linkedin.com/in/"
                 target="_blank"
-                class="keyword"
-                title="Epic Web Dev"
-                aria-label="Epic Web Dev"
-                >Epic Web</a
-              >, before formally strengthening my skills by completing a
-              software development program at the University of British Columbia
-              (UBC).
-            </p>
-
-            <p>
-              I also have a solid background in product management as a
-              certified scrum product owner (CSPO) from
+                title="Fabian's Linkedin"
+                aria-label="LinkedIn link"
+              >
+                <!-- linkedin icon by Free Icons (https://free-icons.github.io/free-icons/) -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 512 512"
+                  class="icon"
+                >
+                  <path
+                    d="M 475.42857142857144 0 L 36.57142857142857 0 L 475.42857142857144 0 L 36.57142857142857 0 Q 20.571428571428573 0 10.285714285714286 10.285714285714286 Q 0 21.714285714285715 0 36.57142857142857 L 0 475.42857142857144 L 0 475.42857142857144 Q 0 490.2857142857143 10.285714285714286 501.7142857142857 Q 20.571428571428573 512 36.57142857142857 512 L 475.42857142857144 512 L 475.42857142857144 512 Q 491.42857142857144 512 501.7142857142857 501.7142857142857 Q 512 490.2857142857143 512 475.42857142857144 L 512 36.57142857142857 L 512 36.57142857142857 Q 512 21.714285714285715 501.7142857142857 10.285714285714286 Q 491.42857142857144 0 475.42857142857144 0 L 475.42857142857144 0 Z M 154.28571428571428 438.85714285714283 L 78.85714285714286 438.85714285714283 L 154.28571428571428 438.85714285714283 L 78.85714285714286 438.85714285714283 L 78.85714285714286 194.28571428571428 L 78.85714285714286 194.28571428571428 L 155.42857142857142 194.28571428571428 L 155.42857142857142 194.28571428571428 L 155.42857142857142 438.85714285714283 L 154.28571428571428 438.85714285714283 Z M 116.57142857142857 161.14285714285714 Q 98.28571428571429 161.14285714285714 85.71428571428571 148.57142857142858 L 85.71428571428571 148.57142857142858 L 85.71428571428571 148.57142857142858 Q 73.14285714285714 136 73.14285714285714 117.71428571428571 Q 73.14285714285714 98.28571428571429 85.71428571428571 85.71428571428571 Q 98.28571428571429 73.14285714285714 116.57142857142857 73.14285714285714 Q 136 73.14285714285714 147.42857142857142 85.71428571428571 Q 160 98.28571428571429 161.14285714285714 117.71428571428571 Q 160 136 147.42857142857142 148.57142857142858 Q 136 161.14285714285714 116.57142857142857 161.14285714285714 L 116.57142857142857 161.14285714285714 Z M 438.85714285714283 438.85714285714283 L 363.42857142857144 438.85714285714283 L 438.85714285714283 438.85714285714283 L 363.42857142857144 438.85714285714283 L 363.42857142857144 320 L 363.42857142857144 320 Q 364.57142857142856 297.14285714285717 357.7142857142857 276.57142857142856 Q 352 257.14285714285717 323.42857142857144 254.85714285714286 Q 294.85714285714283 256 285.7142857142857 274.2857142857143 Q 277.7142857142857 292.57142857142856 278.85714285714283 317.7142857142857 L 278.85714285714283 438.85714285714283 L 278.85714285714283 438.85714285714283 L 202.28571428571428 438.85714285714283 L 202.28571428571428 438.85714285714283 L 202.28571428571428 194.28571428571428 L 202.28571428571428 194.28571428571428 L 275.42857142857144 194.28571428571428 L 275.42857142857144 194.28571428571428 L 275.42857142857144 227.42857142857142 L 275.42857142857144 227.42857142857142 L 276.57142857142856 227.42857142857142 L 276.57142857142856 227.42857142857142 Q 283.42857142857144 212.57142857142858 301.7142857142857 201.14285714285714 Q 320 188.57142857142858 348.57142857142856 188.57142857142858 Q 404.57142857142856 189.71428571428572 422.85714285714283 221.71428571428572 Q 441.14285714285717 254.85714285714286 438.85714285714283 305.14285714285717 L 438.85714285714283 438.85714285714283 L 438.85714285714283 438.85714285714283 Z"
+                  />
+                </svg>
+              </a>
               <a
-                href="https://www.scrumalliance.org/get-certified/product-owner-track/certified-scrum-product-owner"
-                class="keyword"
-                >Scrum Alliance</a
-              >, which has given me a strong foundation in Agile methodologies,
-              cross-functional collaboration, and gathering user feedback to
-              drive continuous, iterative product improvements. I've worked
-              closely with developers, business leaders, and end users to ensure
-              that technical solutions align with real-world needs.
-            </p>
-
-            <p>
-              Today, I focus on web development, app development, and software
-              engineering, applying both my technical and product expertise to
-              create scalable, user-centric solutions.
-            </p>
-
-            <div class="sub-content-inner">
-              <h3>Technical skills:</h3>
-              <ul class="technical-skills">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Typescript</li>
-                <li>Node JS</li>
-                <li>React</li>
-                <li>Remix</li>
-                <li>Python</li>
-              </ul>
+                href="https://github.com/fjuren"
+                target="_blank"
+                target="GitHub"
+                title="Fabian's GitHub"
+                aria-label="GitHub link"
+              >
+                <!-- github icon by Free Icons (https://free-icons.github.io/free-icons/) -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 512 512"
+                  class="icon"
+                >
+                  <path
+                    d="M 171.3548387096774 407.741935483871 Q 170.32258064516128 411.8709677419355 166.19354838709677 411.8709677419355 Q 160 411.8709677419355 160 407.741935483871 Q 161.03225806451613 404.64516129032256 165.16129032258064 404.64516129032256 Q 170.32258064516128 404.64516129032256 171.3548387096774 407.741935483871 L 171.3548387096774 407.741935483871 Z M 139.3548387096774 403.61290322580646 Q 138.32258064516128 406.7096774193548 143.48387096774192 408.7741935483871 Q 148.6451612903226 409.80645161290323 149.67741935483872 406.7096774193548 Q 150.70967741935485 402.5806451612903 145.5483870967742 401.5483870967742 Q 140.38709677419354 400.51612903225805 139.3548387096774 403.61290322580646 L 139.3548387096774 403.61290322580646 Z M 184.7741935483871 401.5483870967742 Q 179.61290322580646 402.5806451612903 179.61290322580646 406.7096774193548 Q 180.6451612903226 409.80645161290323 185.80645161290323 409.80645161290323 Q 190.96774193548387 407.741935483871 190.96774193548387 404.64516129032256 Q 189.93548387096774 401.5483870967742 184.7741935483871 401.5483870967742 L 184.7741935483871 401.5483870967742 Z M 252.90322580645162 6.193548387096774 Q 142.4516129032258 8.258064516129032 72.25806451612904 78.45161290322581 L 72.25806451612904 78.45161290322581 L 72.25806451612904 78.45161290322581 Q 2.064516129032258 148.6451612903226 0 258.06451612903226 Q 1.032258064516129 345.80645161290323 48.516129032258064 411.8709677419355 Q 96 477.93548387096774 175.48387096774192 504.7741935483871 Q 194.06451612903226 505.80645161290323 193.03225806451613 492.38709677419354 Q 193.03225806451613 488.258064516129 193.03225806451613 476.9032258064516 Q 193.03225806451613 453.16129032258067 193.03225806451613 429.4193548387097 Q 190.96774193548387 429.4193548387097 173.41935483870967 431.48387096774195 Q 154.83870967741936 432.51612903225805 134.19354838709677 427.35483870967744 Q 113.54838709677419 421.16129032258067 105.29032258064517 398.4516129032258 Q 105.29032258064517 396.38709677419354 97.03225806451613 381.93548387096774 Q 88.7741935483871 368.51612903225805 76.38709677419355 360.258064516129 Q 74.3225806451613 359.2258064516129 68.12903225806451 352 Q 60.903225806451616 345.80645161290323 78.45161290322581 344.7741935483871 Q 79.48387096774194 343.741935483871 92.90322580645162 348.9032258064516 Q 106.3225806451613 353.03225806451616 117.6774193548387 371.61290322580646 Q 136.25806451612902 399.48387096774195 157.93548387096774 399.48387096774195 Q 180.6451612903226 399.48387096774195 193.03225806451613 393.2903225806452 Q 197.16129032258064 368.51612903225805 209.5483870967742 358.19354838709677 Q 164.1290322580645 356.1290322580645 130.06451612903226 335.48387096774195 Q 96 315.8709677419355 93.93548387096774 243.61290322580646 Q 93.93548387096774 222.96774193548387 100.12903225806451 209.5483870967742 Q 105.29032258064517 196.1290322580645 117.6774193548387 183.74193548387098 Q 115.61290322580645 177.5483870967742 113.54838709677419 158.96774193548387 Q 111.48387096774194 140.38709677419354 120.7741935483871 113.54838709677419 Q 139.3548387096774 110.45161290322581 164.1290322580645 124.90322580645162 Q 189.93548387096774 138.32258064516128 192 141.41935483870967 Q 192 141.41935483870967 192 141.41935483870967 Q 222.96774193548387 132.1290322580645 257.03225806451616 132.1290322580645 Q 290.06451612903226 132.1290322580645 322.06451612903226 141.41935483870967 Q 322.06451612903226 140.38709677419354 335.48387096774195 132.1290322580645 Q 347.8709677419355 123.87096774193549 364.38709677419354 117.6774193548387 Q 380.9032258064516 110.45161290322581 393.2903225806452 113.54838709677419 Q 402.5806451612903 140.38709677419354 400.51612903225805 158.96774193548387 Q 398.4516129032258 177.5483870967742 395.35483870967744 183.74193548387098 Q 407.741935483871 196.1290322580645 414.96774193548384 209.5483870967742 Q 422.19354838709677 222.96774193548387 422.19354838709677 243.61290322580646 Q 421.16129032258067 293.16129032258067 404.64516129032256 316.9032258064516 Q 387.0967741935484 339.61290322580646 360.258064516129 347.8709677419355 Q 333.4193548387097 356.1290322580645 303.48387096774195 358.19354838709677 Q 320 369.5483870967742 321.03225806451616 405.6774193548387 Q 321.03225806451616 443.8709677419355 321.03225806451616 473.80645161290323 Q 321.03225806451616 487.2258064516129 321.03225806451616 492.38709677419354 Q 320 505.80645161290323 338.5806451612903 504.7741935483871 Q 417.03225806451616 477.93548387096774 464.51612903225805 411.8709677419355 Q 510.96774193548384 345.80645161290323 512 258.06451612903226 Q 510.96774193548384 185.80645161290323 476.9032258064516 129.03225806451613 Q 441.80645161290323 72.25806451612904 384 39.225806451612904 Q 325.16129032258067 7.225806451612903 252.90322580645162 6.193548387096774 L 252.90322580645162 6.193548387096774 Z M 100.12903225806451 362.3225806451613 Q 98.06451612903226 364.38709677419354 101.16129032258064 367.48387096774195 Q 104.25806451612904 370.5806451612903 106.3225806451613 368.51612903225805 Q 108.38709677419355 366.4516129032258 105.29032258064517 363.35483870967744 Q 103.2258064516129 360.258064516129 100.12903225806451 362.3225806451613 L 100.12903225806451 362.3225806451613 Z M 88.7741935483871 354.06451612903226 Q 88.7741935483871 356.1290322580645 91.87096774193549 358.19354838709677 Q 94.96774193548387 359.2258064516129 96 357.16129032258067 Q 97.03225806451613 355.0967741935484 93.93548387096774 353.03225806451616 Q 90.83870967741936 352 88.7741935483871 354.06451612903226 L 88.7741935483871 354.06451612903226 Z M 122.83870967741936 390.19354838709677 Q 120.7741935483871 393.2903225806452 123.87096774193549 397.4193548387097 Q 128 400.51612903225805 131.09677419354838 398.4516129032258 Q 132.1290322580645 395.35483870967744 129.03225806451613 391.2258064516129 Q 124.90322580645162 388.1290322580645 122.83870967741936 390.19354838709677 L 122.83870967741936 390.19354838709677 Z M 110.45161290322581 375.741935483871 Q 108.38709677419355 377.80645161290323 110.45161290322581 381.93548387096774 Q 113.54838709677419 385.03225806451616 116.64516129032258 384 Q 118.70967741935483 381.93548387096774 116.64516129032258 377.80645161290323 Q 113.54838709677419 373.6774193548387 110.45161290322581 375.741935483871 L 110.45161290322581 375.741935483871 Z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="cta-buttons">
+              <a
+                href="#featured-projects"
+                title="Featured projects"
+                aria-label="Go to featured projects section"
+                class="btn primary-btn"
+              >
+                Check out my work
+              </a>
+              or
+              <a
+                href="#contact"
+                title="Contact"
+                aria-label="Go to contact section"
+                class="btn secondary-btn"
+                >Say hello</a
+              >
             </div>
           </div>
-          <img
-            id="profile-pic"
-            src="\Fabian's profile picture.webp"
-            alt="Picture of Fabian with a pretty mountainous background"
-          />
+          <div class="hero-img">
+            <img
+              id="profile-pic"
+              src="./Fabian-profile-picture.webp"
+              alt="Picture of Fabian with a pretty mountainous background"
+            />
+          </div>
+        </section>
+        <div style="display: flex; justify-content: center">
+          <hr />
         </div>
-      </section>
-
-      <div style="display: flex; justify-content: center">
-        <hr />
-      </div>
-
-      <!-- Featured projects -->
-      <section id="featured-projects" class="content list-content">
-        <h2>Featured Projects</h2>
-        <div class="parent-stacked-list">
-          <div class="child-stacked-list">
-            <h3>Grocerfy - grocery list making app</h3>
-            <h4>Tech Stack: [React, Material UI, Firebase .......]</h4>
+        <!-- About -->
+        <section id="about" class="content">
+          <h2>About</h2>
+          <div class="content-mid">
+            <div class="content-inner">
+              <p>
+                <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Possimus quod, dignissimos est delectus laborum atque ratione
+                blanditiis quidem adipisci sunt. Similique accusamus consequatur
+                quasi quidem at quia beatae a dignissimos! Lorem ipsum dolor sit
+                amet, consectetur adipisicing elit. Laboriosam ex aspernatur
+                molestias nam, deleniti porro doloribus, minima quia natus quae
+                temporibus cupiditate reprehenderit ipsa deserunt. Repellat
+                voluptas quia tempore veritatis? -->
+                Great software isn't just about code; it's about people. I
+                bridge the gap between development and user experience, ensuring
+                products are intuitive and accessible for users and easy for
+                developers to maintain and scale.
+              </p>
+              <p>
+                <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Possimus quod, dignissimos est delectus laborum atque ratione
+                blanditiis quidem adipisci sunt. Similique accusamus consequatur
+                quasi quidem at quia beatae a dignissimos! Lorem ipsum dolor sit
+                amet, consectetur adipisicing elit. Laboriosam ex aspernatur
+                molestias nam, deleniti porro doloribus, minima quia natus quae
+                temporibus cupiditate reprehenderit ipsa deserunt. Repellat
+                voluptas quia tempore veritatis? -->
+                My journey into software development began with an enjoyment for
+                problem-solving. While working as a data analyst, I especially
+                enjoyed the technical aspects - SQL data wrangling, Python
+                scripting - but I soon realized my true passion lay in building
+                software. I self-taught coding through open-source resources
+                like
+                <a
+                  href="http://theodinproject.com/"
+                  target="_blank"
+                  title="The Odin Project"
+                  aria-label="The Odin Project"
+                  class="keyword"
+                  >The Odin Project</a
+                >
+                and
+                <a
+                  href="https://www.epicweb.dev/"
+                  target="_blank"
+                  class="keyword"
+                  title="Epic Web Dev"
+                  aria-label="Epic Web Dev"
+                  >Epic Web</a
+                >, before formally strengthening my skills by completing a
+                software development program at the University of British
+                Columbia (UBC).
+              </p>
+              <p>
+                <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Possimus quod, dignissimos est delectus laborum atque ratione
+                blanditiis quidem adipisci sunt. Similique accusamus consequatur
+                quasi quidem at quia beatae a dignissimos! Lorem ipsum dolor sit
+                amet, consectetur adipisicing elit. Laboriosam ex aspernatur
+                molestias nam, deleniti porro doloribus, minima quia natus quae
+                temporibus cupiditate reprehenderit ipsa deserunt. Repellat
+                voluptas quia tempore veritatis? -->
+                I also have a solid background in product management as a
+                certified scrum product owner (CSPO) from
+                <a
+                  href="https://www.scrumalliance.org/get-certified/product-owner-track/certified-scrum-product-owner"
+                  class="keyword"
+                  >Scrum Alliance</a
+                >, which has given me a strong foundation in Agile
+                methodologies, cross-functional collaboration, and gathering
+                user feedback to drive continuous, iterative product
+                improvements. I've worked closely with developers, business
+                leaders, and end users to ensure that technical solutions align
+                with real-world needs.
+              </p>
+              <p>
+                <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Possimus quod, dignissimos est delectus laborum atque ratione
+                blanditiis quidem adipisci sunt. Similique accusamus consequatur
+                quasi quidem at quia beatae a dignissimos! Lorem ipsum dolor sit
+                amet, consectetur adipisicing elit. Laboriosam ex aspernatur
+                molestias nam, deleniti porro doloribus, minima quia natus quae
+                temporibus cupiditate reprehenderit ipsa deserunt. Repellat
+                voluptas quia tempore veritatis? -->
+                Today, I focus on web development, app development, and software
+                engineering, applying both my technical and product expertise to
+                create scalable, user-centric solutions.
+              </p>
+              <div class="sub-content-inner">
+                <h3>Technical skills:</h3>
+                <ul class="technical-skills">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>Typescript</li>
+                  <li>Node JS</li>
+                  <li>React</li>
+                  <li>Remix</li>
+                  <li>Python</li>
+                </ul>
+              </div>
+            </div>
+            <!-- <img
+              id="profile-pic"
+              src="\Fabian's profile picture.webp"
+              alt="Picture of Fabian with a pretty mountainous background"
+            /> -->
+          </div>
+        </section>
+        <div style="display: flex; justify-content: center">
+          <hr />
+        </div>
+        <!-- Featured projects -->
+        <section id="featured-projects" class="content list-content">
+          <h2>Featured Projects</h2>
+          <div class="parent-stacked-list">
+            <div class="child-stacked-list">
+              <a
+                href="#"
+                target="_blank"
+                title="Grocery web app demo"
+                aria-label="Grocery; a grocery list making app demo"
+                class="text-with-icon"
+              >
+                <h3>Grocerfy - grocery list making app</h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  fill="currentColor"
+                  class="icon"
+                >
+                  <path
+                    d="M 352 0 Q 331 1 322 20 Q 315 39 329 55 L 371 96 L 371 96 L 201 265 L 201 265 Q 192 275 192 288 Q 192 301 201 311 Q 211 320 224 320 Q 237 320 247 311 L 416 141 L 416 141 L 457 183 L 457 183 Q 473 197 492 190 Q 511 181 512 160 L 512 32 L 512 32 Q 512 18 503 9 Q 494 0 480 0 L 352 0 L 352 0 Z M 80 32 Q 46 33 23 55 L 23 55 L 23 55 Q 1 78 0 112 L 0 432 L 0 432 Q 1 466 23 489 Q 46 511 80 512 L 400 512 L 400 512 Q 434 511 457 489 Q 479 466 480 432 L 480 320 L 480 320 Q 480 306 471 297 Q 462 288 448 288 Q 434 288 425 297 Q 416 306 416 320 L 416 432 L 416 432 Q 415 447 400 448 L 80 448 L 80 448 Q 65 447 64 432 L 64 112 L 64 112 Q 65 97 80 96 L 192 96 L 192 96 Q 206 96 215 87 Q 224 78 224 64 Q 224 50 215 41 Q 206 32 192 32 L 80 32 L 80 32 Z"
+                  />
+                </svg>
+              </a>
+              <h4>Tech Stack: [React, Material UI, Firebase .......]</h4>
+              <div>
+                <ul class="features">
+                  <li>Built a full-stack web application where...etc</li>
+                  <li>
+                    Integrated authentication, database management and an
+                    intuitive UI/UX design
+                  </li>
+                  <li>Leveraged pre-existing UI library.... etc...</li>
+                </ul>
+              </div>
+            </div>
+            <div class="child-stacked-list">
+              <h3>Title - description</h3>
+              <h4>Tech Stack: [lorem ipsum]</h4>
+              <div>
+                <ul class="features">
+                  <li>Built a full-stack web application where...etc</li>
+                  <li>
+                    Integrated authentication, database management and an
+                    intuitive UI/UX design
+                  </li>
+                  <li>Leveraged pre-existing UI library.... etc...</li>
+                </ul>
+              </div>
+            </div>
+            <div class="child-stacked-list">
+              <h3>Title - description</h3>
+              <h4>Tech Stack: [lorem ipsum]</h4>
+              <div>
+                <ul class="features">
+                  <li>Built a full-stack web application where...etc</li>
+                  <li>
+                    Integrated authentication, database management and an
+                    intuitive UI/UX design
+                  </li>
+                  <li>Leveraged pre-existing UI library.... etc...</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div style="display: flex; justify-content: center">
+          <hr />
+        </div>
+        <!-- Education -->
+        <section id="education" class="content">
+          <h2>Education</h2>
+          <div class="parent-stacked-list">
             <div>
               <ul class="features">
-                <li>Built a full-stack web application where...etc</li>
                 <li>
-                  Integrated authentication, database management and an
-                  intuitive UI/UX design
+                  <b>Software Development Certification</b> | University of
+                  Bristish Columbia
                 </li>
-                <li>Leveraged pre-existing UI library.... etc...</li>
+                <li><b>CSPO</b> | Scrum Alliance</li>
+                <li><b>BSc</b> | University of Bristish Columbia</li>
               </ul>
             </div>
           </div>
-
-          <div class="child-stacked-list">
-            <h3>Title - description</h3>
-            <h4>Tech Stack: [lorem ipsum]</h4>
-            <div>
-              <ul class="features">
-                <li>Built a full-stack web application where...etc</li>
-                <li>
-                  Integrated authentication, database management and an
-                  intuitive UI/UX design
-                </li>
-                <li>Leveraged pre-existing UI library.... etc...</li>
-              </ul>
+        </section>
+        <div style="display: flex; justify-content: center">
+          <hr />
+        </div>
+        <!-- Contact -->
+        <section id="contact" class="content">
+          <h2>Next Steps</h2>
+          <div class="parent-stacked-list">
+            <div class="child-stacked-list">
+              <h3>Let's connect!</h3>
+              <p>
+                I'd love to chat about software development, product strategy,
+                or anything tech-related. Whether you have questions,
+                collaboration ideas, or job opportunities, feel free to reach
+                out.
+              </p>
+            </div>
+            <div class="solo-btns">
+              <a
+                href="mailto:fjuren@gmail.com"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Contact Fabian"
+                aria-label="Contact Fabian"
+                class="btn primary-btn"
+                >Reach out!</a
+              >
             </div>
           </div>
-
-          <div class="child-stacked-list">
-            <h3>Title - description</h3>
-            <h4>Tech Stack: [lorem ipsum]</h4>
-            <div>
-              <ul class="features">
-                <li>Built a full-stack web application where...etc</li>
-                <li>
-                  Integrated authentication, database management and an
-                  intuitive UI/UX design
-                </li>
-                <li>Leveraged pre-existing UI library.... etc...</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div style="display: flex; justify-content: center">
-        <hr />
-      </div>
-
-      <!-- Education -->
-      <section id="education" class="content">
-        <h2>Education</h2>
-        <div class="parent-stacked-list">
-          <div>
-            <ul class="features">
-              <li>BSc - UBC</li>
-              <li>Software Development Certification - UBC</li>
-              <li>CSPO Scrum Alliance</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <div style="display: flex; justify-content: center">
-        <hr />
-      </div>
-
-      <!-- Contact -->
-      <section id="contact" class="content">
-        <h2>Next Steps</h2>
-        <div class="parent-stacked-list">
-          <div class="child-stacked-list">
-            <h3>Let's connect!</h3>
-            <p>
-              I'd love to chat about software development, product strategy, or
-              anything tech-related. Whether you have questions, collaboration
-              ideas, or job opportunities, feel free to reach out.
-            </p>
-          </div>
-          <div class="solo-btns">
-            <a
-              href="mailto:fjuren@gmail.com"
-              rel="noopener noreferrer"
-              target="_blank"
-              title="Contact Fabian"
-              aria-label="Contact Fabian"
-              class="btn primary-btn"
-              >Reach out!</a
-            >
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer"><p>Built by Fabian Juren</p></footer>
+        </section>
+      </main>
+      <footer class="footer"><p>© Built by Fabian Juren</p></footer>
+    </div>
   </body>
 </html>
