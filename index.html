@@ -16,9 +16,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
     />
 
     <link
@@ -36,6 +38,7 @@
         >Jump to main content</a
       >
       <header>
+        <!-- nav -->
         <nav role="navigation" aria-label="Top navigation bar">
           <a href="#" id="logo">
             <div>FJ</div>
@@ -47,20 +50,17 @@
             <li style="background-color: inherit">
               <a
                 href="mailto:fjuren@gmail.com"
-                rel="noopener noreferrer"
                 target="_blank"
-                title="Contact Fabian"
+                rel="noopener noreferrer"
+                title="Contact"
                 aria-label="Contact Fabian"
-                class="custom-btn secondary-custom-btn"
+                class="btn btn-secondary btn-md custom-btn secondary-custom-btn"
+                role="button"
+                aria-pressed="true"
                 >Contact</a
               >
             </li>
           </ul>
-          <div id="hamburger">
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-          </div>
         </nav>
       </header>
       <main>
@@ -116,24 +116,31 @@
                 href="#featured-projects"
                 title="Featured projects"
                 aria-label="Go to featured projects section"
-                class="custom-btn primary-custom-btn"
+                class="btn btn-primary btn-md custom-btn primary-custom-btn"
+                role="button"
+                aria-pressed="true"
+                >Check out my work</a
               >
-                Check out my work
-              </a>
-              <!-- or
+              <div>or</div>
               <a
                 href="#contact"
                 title="Contact"
                 aria-label="Go to contact section"
-                class="custom-btn secondary-custom-btn"
+                class="btn btn-secondary btn-md custom-btn secondary-custom-btn"
+                role="button"
+                aria-pressed="true"
                 >Say hello</a
-              > -->
+              >
             </div>
           </div>
           <div class="hero-img">
             <img
               id="profile-pic"
-              src="./fabianprofile-default.webp"
+              src="fabianprofile-400.webp"
+              srcset="
+                fabianprofile-800.webp   800w,
+                fabianprofile-2732.webp 2000w
+              "
               alt="Picture of Fabian with a pretty mountainous background"
             />
           </div>
@@ -372,6 +379,7 @@
       <footer class="footer"><p>&copy; Built by Fabian Juren</p></footer>
     </div>
     <script
+      async
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
