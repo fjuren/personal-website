@@ -33,41 +33,59 @@
   </head>
   <body>
     <div class="container">
-      <!-- Navigation -->
       <a href="#hero" class="primary-custom-btn visible-hidden"
         >Jump to main content</a
       >
+      <!-- Navigation -->
       <header>
-        <!-- nav -->
-        <nav role="navigation" aria-label="Top navigation bar">
-          <a href="#" id="logo">
-            <div>FJ</div>
-          </a>
-          <ul id="nav-ul">
-            <li><a href="#about">About</a></li>
-            <li><a href="#featured-projects">Featured Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li style="background-color: inherit">
-              <a
-                href="mailto:fjuren@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Contact"
-                aria-label="Contact Fabian"
-                class="btn btn-secondary btn-md custom-btn secondary-custom-btn"
-                role="button"
-                aria-pressed="true"
-                >Contact</a
-              >
-            </li>
-          </ul>
+        <!-- bootstrap nav -->
+        <nav class="navbar d-flex navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">FJ</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#featured-projects"
+                    >Featured Projects</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="btn btn-outline-secondary mod-btn"
+                    role="button"
+                    href="#contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </header>
       <main>
         <!-- Hero -->
         <section class="hero">
           <div class="hero-content">
-            <!-- <h6 class="intro-1">Hey there! I'm</h6> -->
             <h1 class="intro-2">Fabian Juren</h1>
             <p class="intro-3">An aspiring software developer</p>
             <p class="intro-4">I like building stuff for the web.</p>
@@ -118,7 +136,6 @@
                 aria-label="Go to featured projects section"
                 class="btn btn-primary btn-md custom-btn primary-custom-btn"
                 role="button"
-                aria-pressed="true"
                 >Check out my work</a
               >
               <div>or</div>
@@ -128,7 +145,6 @@
                 aria-label="Go to contact section"
                 class="btn btn-secondary btn-md custom-btn secondary-custom-btn"
                 role="button"
-                aria-pressed="true"
                 >Say hello</a
               >
             </div>
@@ -154,28 +170,12 @@
           <div class="content-mid">
             <div class="content-inner">
               <p>
-                <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Possimus quod, dignissimos est delectus laborum atque ratione
-                blanditiis quidem adipisci sunt. Similique accusamus consequatur
-                quasi quidem at quia beatae a dignissimos! Lorem ipsum dolor sit
-                amet, consectetur adipisicing elit. Laboriosam ex aspernatur
-                molestias nam, deleniti porro doloribus, minima quia natus quae
-                temporibus cupiditate reprehenderit ipsa deserunt. Repellat
-                voluptas quia tempore veritatis? -->
                 Great software isn't just about code; it's about people. I
                 bridge the gap between development and user experience, ensuring
                 products are intuitive and accessible for users and easy for
                 developers to maintain and scale.
               </p>
               <p>
-                <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Possimus quod, dignissimos est delectus laborum atque ratione
-                blanditiis quidem adipisci sunt. Similique accusamus consequatur
-                quasi quidem at quia beatae a dignissimos! Lorem ipsum dolor sit
-                amet, consectetur adipisicing elit. Laboriosam ex aspernatur
-                molestias nam, deleniti porro doloribus, minima quia natus quae
-                temporibus cupiditate reprehenderit ipsa deserunt. Repellat
-                voluptas quia tempore veritatis? -->
                 My journey into software development began with an enjoyment for
                 problem-solving. While working as a data analyst, I especially
                 enjoyed the technical aspects - SQL data wrangling, Python
@@ -203,16 +203,8 @@
                 Columbia (UBC).
               </p>
               <p>
-                <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Possimus quod, dignissimos est delectus laborum atque ratione
-                blanditiis quidem adipisci sunt. Similique accusamus consequatur
-                quasi quidem at quia beatae a dignissimos! Lorem ipsum dolor sit
-                amet, consectetur adipisicing elit. Laboriosam ex aspernatur
-                molestias nam, deleniti porro doloribus, minima quia natus quae
-                temporibus cupiditate reprehenderit ipsa deserunt. Repellat
-                voluptas quia tempore veritatis? -->
-                I also have a solid background in product management as a
-                certified scrum product owner (CSPO) from
+                I have a solid background in product management as a certified
+                scrum product owner (CSPO) from
                 <a
                   href="https://www.scrumalliance.org/get-certified/product-owner-track/certified-scrum-product-owner"
                   class="keyword"
@@ -225,14 +217,6 @@
                 with real-world needs.
               </p>
               <p>
-                <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Possimus quod, dignissimos est delectus laborum atque ratione
-                blanditiis quidem adipisci sunt. Similique accusamus consequatur
-                quasi quidem at quia beatae a dignissimos! Lorem ipsum dolor sit
-                amet, consectetur adipisicing elit. Laboriosam ex aspernatur
-                molestias nam, deleniti porro doloribus, minima quia natus quae
-                temporibus cupiditate reprehenderit ipsa deserunt. Repellat
-                voluptas quia tempore veritatis? -->
                 Today, I focus on web development, app development, and software
                 engineering, applying both my technical and product expertise to
                 create scalable, user-centric solutions.
@@ -251,11 +235,6 @@
                 </ul>
               </div>
             </div>
-            <!-- <img
-              id="profile-pic"
-              src="\Fabian's profile picture.webp"
-              alt="Picture of Fabian with a pretty mountainous background"
-            /> -->
           </div>
         </section>
         <div style="display: flex; justify-content: center">
@@ -273,7 +252,7 @@
                 aria-label="Grocery; a grocery list making app demo"
                 class="text-with-icon"
               >
-                <h3>Grocerfy - grocery list making app</h3>
+                <h3>Grocerfy - grocery list app</h3>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -298,7 +277,25 @@
               </div>
             </div>
             <div class="child-stacked-list">
-              <h3>Title - description</h3>
+              <a
+                href="#"
+                target="_blank"
+                title=""
+                aria-label=""
+                class="text-with-icon"
+              >
+                <h3>Title - description</h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  fill="currentColor"
+                  class="icon"
+                >
+                  <path
+                    d="M 352 0 Q 331 1 322 20 Q 315 39 329 55 L 371 96 L 371 96 L 201 265 L 201 265 Q 192 275 192 288 Q 192 301 201 311 Q 211 320 224 320 Q 237 320 247 311 L 416 141 L 416 141 L 457 183 L 457 183 Q 473 197 492 190 Q 511 181 512 160 L 512 32 L 512 32 Q 512 18 503 9 Q 494 0 480 0 L 352 0 L 352 0 Z M 80 32 Q 46 33 23 55 L 23 55 L 23 55 Q 1 78 0 112 L 0 432 L 0 432 Q 1 466 23 489 Q 46 511 80 512 L 400 512 L 400 512 Q 434 511 457 489 Q 479 466 480 432 L 480 320 L 480 320 Q 480 306 471 297 Q 462 288 448 288 Q 434 288 425 297 Q 416 306 416 320 L 416 432 L 416 432 Q 415 447 400 448 L 80 448 L 80 448 Q 65 447 64 432 L 64 112 L 64 112 Q 65 97 80 96 L 192 96 L 192 96 Q 206 96 215 87 Q 224 78 224 64 Q 224 50 215 41 Q 206 32 192 32 L 80 32 L 80 32 Z"
+                  />
+                </svg>
+              </a>
               <h4>Tech Stack: [lorem ipsum]</h4>
               <div>
                 <ul class="features">
@@ -312,7 +309,25 @@
               </div>
             </div>
             <div class="child-stacked-list">
-              <h3>Title - description</h3>
+              <a
+                href="#"
+                target="_blank"
+                title=""
+                aria-label=""
+                class="text-with-icon"
+              >
+                <h3>Title - description</h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  fill="currentColor"
+                  class="icon"
+                >
+                  <path
+                    d="M 352 0 Q 331 1 322 20 Q 315 39 329 55 L 371 96 L 371 96 L 201 265 L 201 265 Q 192 275 192 288 Q 192 301 201 311 Q 211 320 224 320 Q 237 320 247 311 L 416 141 L 416 141 L 457 183 L 457 183 Q 473 197 492 190 Q 511 181 512 160 L 512 32 L 512 32 Q 512 18 503 9 Q 494 0 480 0 L 352 0 L 352 0 Z M 80 32 Q 46 33 23 55 L 23 55 L 23 55 Q 1 78 0 112 L 0 432 L 0 432 Q 1 466 23 489 Q 46 511 80 512 L 400 512 L 400 512 Q 434 511 457 489 Q 479 466 480 432 L 480 320 L 480 320 Q 480 306 471 297 Q 462 288 448 288 Q 434 288 425 297 Q 416 306 416 320 L 416 432 L 416 432 Q 415 447 400 448 L 80 448 L 80 448 Q 65 447 64 432 L 64 112 L 64 112 Q 65 97 80 96 L 192 96 L 192 96 Q 206 96 215 87 Q 224 78 224 64 Q 224 50 215 41 Q 206 32 192 32 L 80 32 L 80 32 Z"
+                  />
+                </svg>
+              </a>
               <h4>Tech Stack: [lorem ipsum]</h4>
               <div>
                 <ul class="features">
@@ -369,7 +384,8 @@
                 target="_blank"
                 title="Contact Fabian"
                 aria-label="Contact Fabian"
-                class="custom-btn primary-custom-btn"
+                class="btn btn-primary btn-md custom-btn primary-custom-btn"
+                role="button"
                 >Reach out!</a
               >
             </div>
