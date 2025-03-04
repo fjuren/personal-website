@@ -11,10 +11,24 @@
     <meta name="author" content="Fabian Juren" />
     <title>Fabian Juren</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,19 +43,20 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <div class="container">
+      <!-- Accessible navigation support -->
       <a href="#hero" class="primary-custom-btn visible-hidden"
         >Jump to main content</a
       >
-      <!-- Navigation -->
+      <!-- Top nav -->
       <header>
         <!-- bootstrap nav -->
         <nav class="navbar d-flex navbar-expand-lg navbar-dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">FJ</a>
+            <a id="logo" class="navbar-brand" href="#">FJ</a>
             <button
               class="navbar-toggler"
               type="button"
@@ -89,10 +104,10 @@
             <h1 class="intro-2">Fabian Juren</h1>
             <p class="intro-3">An aspiring software developer</p>
             <p class="intro-4">I like building stuff for the web.</p>
-            <!-- Social -->
+            <!-- Social links -->
             <div class="social-links">
               <a
-                href="https://www.linkedin.com/in/"
+                href="https://www.linkedin.com/in/fabianjuren/"
                 target="_blank"
                 title="Fabian's Linkedin"
                 aria-label="LinkedIn link"
@@ -150,12 +165,13 @@
             </div>
           </div>
           <div class="hero-img">
+            <!-- load appropriate image size per screen size to help with performance rating -->
             <img
               id="profile-pic"
-              src="fabianprofile-400.webp"
+              src="/assets/fabianprofile-400.webp"
               srcset="
-                fabianprofile-800.webp   800w,
-                fabianprofile-2732.webp 2000w
+                /assets/fabianprofile-800.webp   800w,
+                /assets/fabianprofile-2732.webp 2000w
               "
               alt="Picture of Fabian with a pretty mountainous background"
             />
@@ -207,7 +223,10 @@
                 scrum product owner (CSPO) from
                 <a
                   href="https://www.scrumalliance.org/get-certified/product-owner-track/certified-scrum-product-owner"
+                  target="_blank"
                   class="keyword"
+                  title="Scrum Alliance"
+                  aria-label="Scrum Alliance"
                   >Scrum Alliance</a
                 >, which has given me a strong foundation in Agile
                 methodologies, cross-functional collaboration, and gathering
@@ -280,8 +299,8 @@
               <a
                 href="#"
                 target="_blank"
-                title=""
-                aria-label=""
+                title="title-description"
+                aria-label="title-description"
                 class="text-with-icon"
               >
                 <h3>Title - description</h3>
@@ -312,8 +331,8 @@
               <a
                 href="#"
                 target="_blank"
-                title=""
-                aria-label=""
+                title="title-description"
+                aria-label="title-description"
                 class="text-with-icon"
               >
                 <h3>Title - description</h3>
