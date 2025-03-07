@@ -1,31 +1,30 @@
 /* mobile first */
 @media all {
-  /* reset browser defaults */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  .container {
+    /* margin: 0 auto; maring: top-bottom left-right */
+    padding: 20px 0 0 0;
   }
 
   body {
     display: flex;
     flex-direction: column;
     background-color: #20252e;
-    font-size: 1rem; /* Default size */
     color: #d8dee9;
     font-family: 'Inter', sans-serif;
   }
 
-  .container {
-    margin: 0 auto; /* maring: top-bottom left-right */
-    padding: 20px 0 0 0;
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    color: #88c0d0;
+    font-size: 0.875rem;
+    font-weight: normal;
   }
 
   /* General -------------------------------------- 
     */
-  html {
-    scroll-behavior: smooth;
-  }
 
   main {
     margin: 3rem 2rem 2rem 2rem;
@@ -34,42 +33,16 @@
     gap: 3rem;
   }
 
-  h2 {
-    font-size: 1.88rem;
-    padding-bottom: 2rem;
-  }
-
-  h3 {
-    font-size: 1.2rem;
-  }
-
-  h4 {
-    font-size: 0.875rem;
-    font-weight: normal;
-    color: #88c0d0;
-  }
-
-  p {
-    line-height: 1.7;
-    font-size: 1rem;
-  }
-
   a {
     color: inherit;
     text-decoration: none;
   }
-  a:hover {
-    /* background-color: #d8dee920;
-      transition: all 0.3s ease-in-out;
-      border-radius: 5px; */
-  }
 
   #profile-pic {
-    width: 25rem;
     height: 25rem;
+    width: 100%;
     object-fit: cover;
     border-radius: 10%;
-    padding: 20px;
   }
 
   footer {
@@ -78,12 +51,17 @@
     justify-content: center;
     padding: 1.2rem 0 1.2rem 0;
   }
+  footer > p {
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
 
   li {
     list-style-type: circle;
-    margin: 0 20px 0 20px;
-    padding: 10px;
-    font-size: 1rem;
+    padding: 4px;
   }
 
   li:hover {
@@ -102,53 +80,51 @@
     text-decoration: underline;
   }
 
+  .intro-1 {
+    margin-bottom: 0;
+  }
+  .intro-2 {
+    margin-bottom: 0;
+  }
+  .intro-3 {
+    margin-bottom: 0.2rem;
+  }
+  .intro-4 {
+    margin-bottom: 0.2rem;
+    opacity: 70%;
+  }
+
   /* top nav -------------------------------------- 
     */
 
   header {
     background-color: #2e3440;
-    opacity: 1;
-    width: 100%;
     position: sticky;
     top: 0;
     z-index: 100;
   }
   #logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
     font-weight: bold;
     padding: 10px;
-    margin: 10px;
     border: 3px solid transparent;
     transition: border 0.6s ease;
-    /* box-sizing: border-box; */
   }
   #logo:hover {
     border: 3px #d8dee920 solid;
     border-width: 3px;
     border-radius: 5px;
   }
-  nav {
-    display: flex;
-    justify-content: stretch;
-  }
-  #nav-ul {
-    display: flex;
-  }
-  #nav-ul > li {
-    list-style-type: none;
-    border-radius: 5px;
-    align-self: center;
-    transition: background-color 0.6s ease;
-  }
-  #nav-ul > li:hover {
-    background-color: #d8dee920;
-    cursor: pointer;
-  }
 
-  #hamburger {
-    display: none;
+  .navbar-custom {
+    background-color: inherit;
+  }
+  .navbar-nav > .nav-item {
+    list-style-type: none !important;
+  }
+  .mod-btn {
+    outline: 2px solid #88c0d0;
+    background-color: inherit;
+    color: #88c0d0;
   }
 
   /* Accessible anchor jump to main -------------------------------------- 
@@ -173,9 +149,7 @@
   /* buttons -------------------------------------- 
     */
 
-  .btn {
-    display: flex;
-    justify-content: center;
+  .custom-btn {
     text-align: center;
     outline: 2px solid #88c0d0;
     background-color: inherit;
@@ -183,29 +157,31 @@
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
   }
-  .btn:hover {
+  .custom-btn:hover {
     background-color: #d8dee920;
     color: #88c0d0;
   }
-  .btn:focus {
+  .custom-btn:focus {
     outline: 3px solid #81a1c1;
     color: #88c0d0;
   }
-  .primary-btn {
+  .custom-btn:active {
+    color: inherit !important;
+    background-color: inherit !important;
+  }
+  .primary-custom-btn {
     background-color: #88c0d0;
     color: #2e3440;
   }
-  .secondary-btn {
+  .secondary-custom-btn {
     background-color: inherit;
     color: #88c0d0;
   }
-  .solo-btns {
+  .solo-custom-btns {
     display: flex;
     justify-content: center;
+    margin-bottom: 3rem;
   }
 
   /* hero -------------------------------------- 
@@ -213,28 +189,15 @@
 
   .hero {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-  }
-  .intro-1 {
-    font-size: 1rem;
-    font-weight: 100;
-    padding-bottom: 0.5rem;
-  }
-  .intro-2 {
-    font-size: 2.2rem;
-    font-weight: bold;
+    align-items: center;
   }
   .intro-3 {
-    font-size: 1rem;
     color: #88c0d0;
     opacity: 75%;
   }
-  .intro-4 {
-    font-size: 1rem;
-    padding: 0 0 1rem 0;
-  }
+
   .social-links {
     display: flex;
     gap: 0.5rem;
@@ -269,7 +232,6 @@
   .technical-skills {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: fit-content;
   }
   .content-mid {
     display: flex;
@@ -279,11 +241,11 @@
   .content-inner {
     display: flex;
     flex-direction: column;
-    gap: 20px;
   }
   .sub-content-inner {
     display: flex;
     flex-direction: column;
+    /* align-self: center; */
   }
 
   /* Featured Projects -------------------------------------- 
@@ -292,6 +254,7 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    margin: 2rem 0 0 0;
   }
   .child-stacked-list {
     display: flex;
@@ -314,71 +277,67 @@
   }
 }
 
-/* Media Queries -------------------------------------- 
+/* MEDIA QUERIES; the following aligns with bootstrap breakpoint standards -------------------------------------- 
   */
 
 /* ====== Small Devices (Phones) ====== -------------------------------------- 
   */
 
-@media (max-width: 640px) {
-  body {
-    font-size: 0.625rem;
+@media (max-width: 767px) {
+  /* general */
+  main {
+    margin: 2rem 2rem 1rem 2rem;
   }
+
   ul {
     display: flex;
     display: none;
-  }
-
-  /* Primary CTA buttons */
-  .cta-buttons {
-    flex-direction: column;
-    font-size: 1rem;
+    margin-bottom: 0;
   }
 
   /* hero */
+  .hero-content {
+    width: 100%;
+  }
+  .hero-img {
+    width: 100%;
+  }
   #profile-pic {
-    width: 20rem;
     height: 16rem;
+    border-radius: 5%;
+  }
+  /* Primary CTA buttons */
+  .cta-buttons {
+    flex-direction: column;
   }
 
-  #nav-ul {
-    display: none;
-  }
-  nav {
-    justify-content: space-between;
-  }
-  #hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
-  }
-  #hamburger > span {
-    margin: 3px;
-    width: 32px;
-    height: 3px;
-  }
-  .hamburger-top,
-  .hamburger-middle,
-  .hamburger-bottom {
-    width: 35px;
-    height: 5px;
-    background-color: #d8dee9;
-    margin: 6px 0;
-    transition: 0.4s;
+  .mod-btn {
+    width: 100%;
   }
 }
 
 /* ====== Medium Devices (Tablets) ====== -------------------------------------- 
     */
-@media (min-width: 641px) and (max-width: 1024px) {
-  /* general */
-  body {
-    font-size: 1.125rem; /* 18px */
+@media (min-width: 768px) and (max-width: 992px) {
+  /* hero */
+  .hero-content {
+    width: 100%;
   }
-  main {
-    margin: 3rem 2rem 2rem 2rem;
+  .hero-img {
+    width: 100%;
+  }
+  #profile-pic {
+    /* width: 25rem; */
+    width: 100%;
+    height: 25rem;
+  }
+  /* Primary CTA buttons */
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .mod-btn {
+    width: 100%;
   }
 
   /* General content (About | Featured projects | Education 
@@ -391,12 +350,15 @@
 
 /* ====== Large Devices (Laptops) ====== -------------------------------------- 
     */
-@media (min-width: 1025px) and (max-width: 1440px) {
-  body {
-    font-size: 1.25rem; /* 20px */
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* hero */
+  #profile-pic {
+    width: 100%;
+    height: 25rem;
   }
-  main {
-    margin: 6rem 15rem 2rem 15rem;
+  .cta-buttons div,
+  .cta-buttons a:nth-of-type(2) {
+    display: none;
   }
 
   /* General content (About | Featured projects | Education 
@@ -404,105 +366,53 @@
     */
   .content-mid {
     flex-wrap: nowrap;
+  }
+
+  .technical-skills {
+    max-width: 40%;
   }
 }
 
 /* ====== Extra Large Devices (Desktops) ====== -------------------------------------- 
     */
-@media (min-width: 1441px) and (max-width: 1920px) {
-  body {
-    font-size: 1.375rem; /* 22px */
+@media (min-width: 1200px) and (max-width: 1920px) {
+  /* hero */
+  #profile-pic {
+    width: 100%;
+    height: 25rem;
   }
-  main {
-    margin: 8rem 20rem 2rem 20rem;
-  }
-  h2 {
-    font-size: 2.2rem;
-    padding-bottom: 2rem;
-  }
-  h3 {
-    font-size: 1.3rem;
-  }
-  h4 {
-    font-size: 1rem;
-    font-weight: normal;
-    color: #88c0d0;
-  }
-  p {
-    font-size: 1.13rem;
+  .cta-buttons div,
+  .cta-buttons a:nth-of-type(2) {
+    display: none;
   }
 
-  /* hero -------------------------------------- 
-    */
-
-  .intro-1 {
-    font-size: 1.3rem;
-    font-weight: 100;
-  }
-  .intro-2 {
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  .intro-3 {
-    font-size: 1.3rem;
-    opacity: 50%;
-  }
-  .intro-4 {
-    font-size: 1.3rem;
-    padding: 1rem 0 1rem 0;
-  }
   /* General content (About | Featured projects | Education 
-     Contact -------------------------------------- 
-    */
+  Contact -------------------------------------- 
+  */
   .content-mid {
     flex-wrap: nowrap;
+  }
+
+  .technical-skills {
+    max-width: 40%;
   }
 }
 
 /* ====== Ultra-Wide Screens (4K & Beyond) ====== -------------------------------------- 
     */
 @media (min-width: 1921px) {
-  body {
-    font-size: 1.5rem; /* 24px */
-  }
-  main {
-    margin: 8rem 35rem 2rem 35rem;
-  }
-
+  /* general */
   h2 {
-    font-size: 2.2rem;
     padding-bottom: 2rem;
   }
-  h3 {
-    font-size: 1.3rem;
-  }
   h4 {
-    font-size: 1rem;
-    font-weight: normal;
     color: #88c0d0;
   }
-  p {
-    font-size: 1.13rem;
-  }
 
-  /* hero -------------------------------------- 
-    */
-
-  .intro-1 {
-    font-size: 1.3rem;
-    font-weight: 100;
-  }
-  .intro-2 {
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  .intro-3 {
-    font-size: 1.3rem;
-    opacity: 50%;
-  }
-  .intro-4 {
-    font-size: 1.3rem;
-    padding: 1rem 0 1rem 0;
+  /* hero */
+  .cta-buttons div,
+  .cta-buttons a:nth-of-type(2) {
+    display: none;
   }
 
   /* General content (About | Featured projects | Education 
@@ -510,5 +420,9 @@
     */
   .content-mid {
     flex-wrap: nowrap;
+  }
+
+  .technical-skills {
+    max-width: 40%;
   }
 }

@@ -11,48 +11,89 @@
     <meta name="author" content="Fabian Juren" />
     <title>Fabian Juren</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <div class="container">
-      <!-- Navigation -->
-      <a href="#hero" class="primary-btn visible-hidden"
+      <!-- Accessible navigation support -->
+      <a href="#hero" class="primary-custom-btn visible-hidden"
         >Jump to main content</a
       >
+      <!-- Top nav -->
       <header>
-        <nav role="navigation" aria-label="Top navigation bar">
-          <a href="#" id="logo">
-            <div>FJ</div>
-          </a>
-          <ul id="nav-ul">
-            <li><a href="#about">About</a></li>
-            <li><a href="#featured-projects">Featured Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li style="background-color: inherit">
-              <a
-                href="mailto:fjuren@gmail.com"
-                rel="noopener noreferrer"
-                target="_blank"
-                title="Contact Fabian"
-                aria-label="Contact Fabian"
-                class="btn secondary-btn"
-                >Contact</a
-              >
-            </li>
-          </ul>
-          <div id="hamburger">
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
+        <!-- bootstrap nav -->
+        <nav class="navbar d-flex navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a id="logo" class="navbar-brand" href="#">FJ</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#featured-projects"
+                    >Featured Projects</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="btn btn-outline-secondary mod-btn"
+                    role="button"
+                    href="#contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </header>
@@ -60,14 +101,13 @@
         <!-- Hero -->
         <section class="hero">
           <div class="hero-content">
-            <h2 class="intro-1">Hey there! I'm</h2>
             <h1 class="intro-2">Fabian Juren</h1>
             <p class="intro-3">An aspiring software developer</p>
             <p class="intro-4">I like building stuff for the web.</p>
-            <!-- Social -->
+            <!-- Social links -->
             <div class="social-links">
               <a
-                href="https://www.linkedin.com/in/"
+                href="https://www.linkedin.com/in/fabianjuren/"
                 target="_blank"
                 title="Fabian's Linkedin"
                 aria-label="LinkedIn link"
@@ -109,24 +149,30 @@
                 href="#featured-projects"
                 title="Featured projects"
                 aria-label="Go to featured projects section"
-                class="btn primary-btn"
+                class="btn btn-primary btn-md custom-btn primary-custom-btn"
+                role="button"
+                >Check out my work</a
               >
-                Check out my work
-              </a>
-              <!-- or
+              <div>or</div>
               <a
                 href="#contact"
                 title="Contact"
                 aria-label="Go to contact section"
-                class="btn secondary-btn"
+                class="btn btn-secondary btn-md custom-btn secondary-custom-btn"
+                role="button"
                 >Say hello</a
-              > -->
+              >
             </div>
           </div>
           <div class="hero-img">
+            <!-- load appropriate image size per screen size to help with performance rating -->
             <img
               id="profile-pic"
-              src="./Fabian-profile-picture.webp"
+              src="./assets/fabianprofile-400.webp"
+              srcset="
+                ./assets/fabianprofile-800.webp   800w,
+                ./assets/fabianprofile-2732.webp 2000w
+              "
               alt="Picture of Fabian with a pretty mountainous background"
             />
           </div>
@@ -140,28 +186,12 @@
           <div class="content-mid">
             <div class="content-inner">
               <p>
-                <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Possimus quod, dignissimos est delectus laborum atque ratione
-                blanditiis quidem adipisci sunt. Similique accusamus consequatur
-                quasi quidem at quia beatae a dignissimos! Lorem ipsum dolor sit
-                amet, consectetur adipisicing elit. Laboriosam ex aspernatur
-                molestias nam, deleniti porro doloribus, minima quia natus quae
-                temporibus cupiditate reprehenderit ipsa deserunt. Repellat
-                voluptas quia tempore veritatis? -->
                 Great software isn't just about code; it's about people. I
                 bridge the gap between development and user experience, ensuring
                 products are intuitive and accessible for users and easy for
                 developers to maintain and scale.
               </p>
               <p>
-                <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Possimus quod, dignissimos est delectus laborum atque ratione
-                blanditiis quidem adipisci sunt. Similique accusamus consequatur
-                quasi quidem at quia beatae a dignissimos! Lorem ipsum dolor sit
-                amet, consectetur adipisicing elit. Laboriosam ex aspernatur
-                molestias nam, deleniti porro doloribus, minima quia natus quae
-                temporibus cupiditate reprehenderit ipsa deserunt. Repellat
-                voluptas quia tempore veritatis? -->
                 My journey into software development began with an enjoyment for
                 problem-solving. While working as a data analyst, I especially
                 enjoyed the technical aspects - SQL data wrangling, Python
@@ -189,19 +219,14 @@
                 Columbia (UBC).
               </p>
               <p>
-                <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Possimus quod, dignissimos est delectus laborum atque ratione
-                blanditiis quidem adipisci sunt. Similique accusamus consequatur
-                quasi quidem at quia beatae a dignissimos! Lorem ipsum dolor sit
-                amet, consectetur adipisicing elit. Laboriosam ex aspernatur
-                molestias nam, deleniti porro doloribus, minima quia natus quae
-                temporibus cupiditate reprehenderit ipsa deserunt. Repellat
-                voluptas quia tempore veritatis? -->
-                I also have a solid background in product management as a
-                certified scrum product owner (CSPO) from
+                I have a solid background in product management as a certified
+                scrum product owner (CSPO) from
                 <a
                   href="https://www.scrumalliance.org/get-certified/product-owner-track/certified-scrum-product-owner"
+                  target="_blank"
                   class="keyword"
+                  title="Scrum Alliance"
+                  aria-label="Scrum Alliance"
                   >Scrum Alliance</a
                 >, which has given me a strong foundation in Agile
                 methodologies, cross-functional collaboration, and gathering
@@ -211,20 +236,12 @@
                 with real-world needs.
               </p>
               <p>
-                <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Possimus quod, dignissimos est delectus laborum atque ratione
-                blanditiis quidem adipisci sunt. Similique accusamus consequatur
-                quasi quidem at quia beatae a dignissimos! Lorem ipsum dolor sit
-                amet, consectetur adipisicing elit. Laboriosam ex aspernatur
-                molestias nam, deleniti porro doloribus, minima quia natus quae
-                temporibus cupiditate reprehenderit ipsa deserunt. Repellat
-                voluptas quia tempore veritatis? -->
                 Today, I focus on web development, app development, and software
                 engineering, applying both my technical and product expertise to
                 create scalable, user-centric solutions.
               </p>
               <div class="sub-content-inner">
-                <h3>Technical skills:</h3>
+                <h3 style="margin-top: 20px">Technical skills:</h3>
                 <ul class="technical-skills">
                   <li>HTML</li>
                   <li>CSS</li>
@@ -237,11 +254,6 @@
                 </ul>
               </div>
             </div>
-            <!-- <img
-              id="profile-pic"
-              src="\Fabian's profile picture.webp"
-              alt="Picture of Fabian with a pretty mountainous background"
-            /> -->
           </div>
         </section>
         <div style="display: flex; justify-content: center">
@@ -259,7 +271,7 @@
                 aria-label="Grocery; a grocery list making app demo"
                 class="text-with-icon"
               >
-                <h3>Grocerfy - grocery list making app</h3>
+                <h3>Grocerfy - grocery list app</h3>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -284,7 +296,25 @@
               </div>
             </div>
             <div class="child-stacked-list">
-              <h3>Title - description</h3>
+              <a
+                href="#"
+                target="_blank"
+                title="title-description"
+                aria-label="title-description"
+                class="text-with-icon"
+              >
+                <h3>Title - description</h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  fill="currentColor"
+                  class="icon"
+                >
+                  <path
+                    d="M 352 0 Q 331 1 322 20 Q 315 39 329 55 L 371 96 L 371 96 L 201 265 L 201 265 Q 192 275 192 288 Q 192 301 201 311 Q 211 320 224 320 Q 237 320 247 311 L 416 141 L 416 141 L 457 183 L 457 183 Q 473 197 492 190 Q 511 181 512 160 L 512 32 L 512 32 Q 512 18 503 9 Q 494 0 480 0 L 352 0 L 352 0 Z M 80 32 Q 46 33 23 55 L 23 55 L 23 55 Q 1 78 0 112 L 0 432 L 0 432 Q 1 466 23 489 Q 46 511 80 512 L 400 512 L 400 512 Q 434 511 457 489 Q 479 466 480 432 L 480 320 L 480 320 Q 480 306 471 297 Q 462 288 448 288 Q 434 288 425 297 Q 416 306 416 320 L 416 432 L 416 432 Q 415 447 400 448 L 80 448 L 80 448 Q 65 447 64 432 L 64 112 L 64 112 Q 65 97 80 96 L 192 96 L 192 96 Q 206 96 215 87 Q 224 78 224 64 Q 224 50 215 41 Q 206 32 192 32 L 80 32 L 80 32 Z"
+                  />
+                </svg>
+              </a>
               <h4>Tech Stack: [lorem ipsum]</h4>
               <div>
                 <ul class="features">
@@ -298,7 +328,25 @@
               </div>
             </div>
             <div class="child-stacked-list">
-              <h3>Title - description</h3>
+              <a
+                href="#"
+                target="_blank"
+                title="title-description"
+                aria-label="title-description"
+                class="text-with-icon"
+              >
+                <h3>Title - description</h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  fill="currentColor"
+                  class="icon"
+                >
+                  <path
+                    d="M 352 0 Q 331 1 322 20 Q 315 39 329 55 L 371 96 L 371 96 L 201 265 L 201 265 Q 192 275 192 288 Q 192 301 201 311 Q 211 320 224 320 Q 237 320 247 311 L 416 141 L 416 141 L 457 183 L 457 183 Q 473 197 492 190 Q 511 181 512 160 L 512 32 L 512 32 Q 512 18 503 9 Q 494 0 480 0 L 352 0 L 352 0 Z M 80 32 Q 46 33 23 55 L 23 55 L 23 55 Q 1 78 0 112 L 0 432 L 0 432 Q 1 466 23 489 Q 46 511 80 512 L 400 512 L 400 512 Q 434 511 457 489 Q 479 466 480 432 L 480 320 L 480 320 Q 480 306 471 297 Q 462 288 448 288 Q 434 288 425 297 Q 416 306 416 320 L 416 432 L 416 432 Q 415 447 400 448 L 80 448 L 80 448 Q 65 447 64 432 L 64 112 L 64 112 Q 65 97 80 96 L 192 96 L 192 96 Q 206 96 215 87 Q 224 78 224 64 Q 224 50 215 41 Q 206 32 192 32 L 80 32 L 80 32 Z"
+                  />
+                </svg>
+              </a>
               <h4>Tech Stack: [lorem ipsum]</h4>
               <div>
                 <ul class="features">
@@ -348,14 +396,15 @@
                 out.
               </p>
             </div>
-            <div class="solo-btns">
+            <div class="solo-custom-btns">
               <a
                 href="mailto:fjuren@gmail.com"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Contact Fabian"
                 aria-label="Contact Fabian"
-                class="btn primary-btn"
+                class="btn btn-primary btn-md custom-btn primary-custom-btn"
+                role="button"
                 >Reach out!</a
               >
             </div>
@@ -364,5 +413,11 @@
       </main>
       <footer class="footer"><p>&copy; Built by Fabian Juren</p></footer>
     </div>
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
