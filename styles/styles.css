@@ -65,7 +65,7 @@
   }
 
   li:hover {
-    cursor: default;
+    /* cursor: pointer; */
     background-color: inherit;
   }
 
@@ -180,6 +180,8 @@
   }
   .solo-custom-btns {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin-bottom: 3rem;
   }
@@ -229,9 +231,25 @@
 
   /* About -------------------------------------- 
     */
-  .technical-skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .technical-skills-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    cursor: default;
+  }
+
+  .skill-pill {
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    border-radius: 5px;
+    background-color: #2e3440;
+    color: #d8dee9;
+    border: 1px solid #d8dee915;
+  }
+
+  .skill-pill:hover {
+    border-color: #88c0d030;
+    background-color: #323844;
   }
   .content-mid {
     display: flex;
@@ -424,5 +442,36 @@
 
   .technical-skills {
     max-width: 40%;
+  }
+}
+
+/* Featured Projects grid -------------------------------------- */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0 0 0;
+}
+
+.project-card {
+  background-color: #2e3440;
+  border: 1px solid #d8dee910;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  display: block;
+  color: inherit;
+  cursor: pointer !important;
+}
+
+.project-card:hover {
+  background-color: #323844;
+  border-color: #88c0d030;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
